@@ -2,13 +2,10 @@
 (defun open-init-file ()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
-(global-set-key (kbd "<f2>") 'open-init-file)
 
 (defun open-init-dir ()
   (interactive)
   (find-file "~/.emacs.d/lisp"))
-(global-set-key (kbd "<f3>") 'open-init-dir)
-
 
 (defun open-file-externally (file)
   "Open FILE externally using the default application of the system."

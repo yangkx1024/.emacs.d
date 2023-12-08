@@ -13,7 +13,6 @@
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-item 10)
-(global-set-key (kbd "C-x b") 'consult-buffer)
 (prefer-coding-system 'utf-8-auto)
 (global-auto-revert-mode t)
 (setq ring-bell-function 'ignored)

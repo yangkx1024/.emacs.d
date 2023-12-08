@@ -7,6 +7,7 @@
 (require 'init-basic)
 (require 'init-funcs)
 (require 'init-ui)
+(require 'init-keybindings)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

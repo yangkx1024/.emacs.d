@@ -74,7 +74,6 @@ Supports exporting consult-grep to wgrep, file to wdeired, and consult-location 
       ('consult-location (let ((embark-after-export-hook #'occur-edit-mode))
                            (embark-export)))
       (x (user-error "embark category %S doesn't support writable export" x)))))
-(define-key minibuffer-local-map (kbd "C-c C-e") 'embark-export-write)
 
 (use-package savehist
   :ensure nil
