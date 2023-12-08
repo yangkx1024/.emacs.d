@@ -4,7 +4,7 @@
 ;; Package Management
 ;; -----------------------------------------------------------------
 (require 'init-packages)
-(require 'init-base)
+(require 'init-basic)
 (require 'init-funcs)
 (require 'init-ui)
 

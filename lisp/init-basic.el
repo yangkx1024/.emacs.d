@@ -6,7 +6,6 @@
 (icomplete-mode 1)
 (setq-default cursor-type 'bar)
 (show-paren-mode t)
-(setq make-backup-files nil)
 (set-face-attribute 'default nil :height 160)
 (setq tab-width 4)
 (setq indent-tabs-mode nil)
@@ -17,8 +16,12 @@
 (global-set-key (kbd "C-x b") 'consult-buffer)
 (prefer-coding-system 'utf-8-auto)
 (global-auto-revert-mode t)
-(setq auto-save-default nil)
 (setq ring-bell-function 'ignored)
 (fset 'yes-or-no-p 'y-or-n-p)
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
-(provide 'init-base)
+(provide 'init-basic)
